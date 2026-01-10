@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Uploads
+uploads/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
