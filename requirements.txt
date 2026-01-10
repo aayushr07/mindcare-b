@@ -12,7 +12,7 @@ pymongo==4.10.1
 scipy==1.15.3
 xgboost==3.0.2
 deepface==0.0.92
-fer==23.1.0
+fer==22.5.1
 pyAudioAnalysis==0.3.14
 openai-whisper==20231117
 tensorflow==2.15.0
