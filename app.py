@@ -1958,7 +1958,16 @@ def ratelimit_handler(e):
 
 # === Start Server ===
 if __name__ == "__main__":
+    import os
+
     logger.info("Starting NeuroNest Unified API Server...")
     logger.info(f"Cognitive Model Loaded: {cognitive_model is not None}")
     logger.info(f"Speech Model Loaded: {speech_session is not None}")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+
+    port = int(os.environ.get("PORT", 5000))
+
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=False
+    )
